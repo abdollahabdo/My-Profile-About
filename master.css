@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body {
+    background-color: rgb(11, 11, 26);
+}
+
+header {
+    background-color:navy ;
+    padding: 2% 3%;
+    position: fixed;
+    width: 96%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 700;
+    pointer-events: none;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: medium;
+    margin-left: 70px;
+    background: linear-gradient(45deg,black,white);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.navbar a:hover {
+    background: linear-gradient(45deg, white , black);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+section {
+    width: 400px;
+    height: 40px;
+    background-color: rgb(11, 11, 26);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 105px 15px;
+    box-shadow: 0 5px 25px #0c00ff;
+    color: white;
+}
+
+.content{
+    display: flex;
+}
+.edu ul{
+    color: white;
+    position: fixed;
+    margin: 175px -380px;
+}
+.edu ul li span{
+    font-weight: 900;
+}
+
+.ski ul{
+    color: white;
+    position: fixed;
+    margin: 175px -380px;
+}
+
+.con dl {
+    color: white;
+    position: fixed;
+    margin: 175px -380px;
+}
+
+.con dl dd {
+    position: fixed;
+}
+img {
+    width: 40px;
+    height: 40px;
+    margin: 0 20px -16px -20px;
+}
+
+dd a{
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    color: white;
+}
+
+dd a:hover{
+color: navy;
+}
+
+@media (min-width: 100px) and (max-width: 896px)  {
+    .edu ul li {
+        position: relative;
+        left: 260px;
+        bottom: 10px;
+    }
+    .skills {
+        position: relative;
+        left: 120px;
+    }
+    .ski ul li {
+        position: relative;
+        left: 399px;
+    }
+    .contact {
+        position: relative;
+        top: 207px;
+        right: 274px;
+    }
+    .con{
+        position: relative;
+        top: 200px;
+    }
+}
